@@ -1,7 +1,4 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.ListTemplate = void 0;
-class ListTemplate {
+export class ListTemplate {
     constructor(container) {
         this.container = container;
     }
@@ -21,4 +18,3 @@ class ListTemplate {
         }
     }
 }
-exports.ListTemplate = ListTemplate;
