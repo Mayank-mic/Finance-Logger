@@ -105,6 +105,20 @@ body{
     border: 2px solid #000;
 }
 
+.failure-message{
+    display: none;
+    position: fixed;
+    top: -50px; /* Initially hide the message above the viewport */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center horizontally */
+    background-color: #ffffff; /* Green background color */
+    color: rgb(0, 0, 0); /* White text color */
+    padding: 20px; /* Add padding */
+    border-radius: 10px; /* Rounded corners */
+    animation: slideDown 0.3s ease forwards; /* Apply animation */
+    border: 2px solid #000;
+}
+
 .success-message span{
   margin-right: 10px;
 }
@@ -119,7 +133,7 @@ body{
     }
 }
 
-.imagee{
+.imagee .imagee2{
   border: #000;
   padding-left: 1cm;
   padding-top: 1cm;
