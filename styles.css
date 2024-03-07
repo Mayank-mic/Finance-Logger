@@ -5,10 +5,11 @@ body{
   .wrapper{
     max-width: 960px;
     margin: 0 auto;
+    
   }
   h1{
-    margin: 40px auto;
-    color: #ff0aa7;
+    margin: 80px auto;
+    color: #62cdee;
     text-align: center;
   }
   ul{
@@ -21,7 +22,7 @@ body{
     margin: 10px auto;
   }
   li h4{
-    color: #ff0aa7;
+    color: #62cdee;
     margin: 0;
     text-transform: capitalize;
   }
@@ -58,7 +59,7 @@ body{
   button{
     color: white;
     border: 0;
-    background: #ff0aa7;
+    background: #62cdee;
     padding: 6px;
     min-width: 80px;
     border-radius: 4px;
@@ -70,3 +71,57 @@ body{
     margin-top: 40px;
     font-size: 0.7em;
   }
+
+
+  /* .success-message {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    
+    transform: translateX(-50%);
+    background-color: #ffffff;
+    color: #070707;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: none;
+    border-color: #000000;
+  } */
+  
+  .fa-check-circle {
+    margin-right: 5px;
+  }
+
+  .success-message{
+    display: none;
+    position: fixed;
+    top: -50px; /* Initially hide the message above the viewport */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center horizontally */
+    background-color: #ffffff; /* Green background color */
+    color: rgb(0, 0, 0); /* White text color */
+    padding: 20px; /* Add padding */
+    border-radius: 10px; /* Rounded corners */
+    animation: slideDown 0.3s ease forwards; /* Apply animation */
+    border: 2px solid #000;
+}
+
+.success-message span{
+  margin-right: 10px;
+}
+
+/* Keyframes for the animation */
+@keyframes slideDown {
+    0% {
+        top: -20px; /* Start position above the viewport */
+    }
+    100% {
+        top: 10px; /* End position below the header */
+    }
+}
+
+.imagee{
+  border: #000;
+  padding-left: 1cm;
+  padding-top: 1cm;
+
+}
