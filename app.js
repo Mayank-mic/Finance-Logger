@@ -23,26 +23,21 @@ form.addEventListener('submit', (e) => {
     }
     list.render(doc, type.value, 'end');
     form.reset();
+
+    const successMessage = document.getElementById('successMessage');
+  
+    function showSuccessMessage() {
+      successMessage.style.display = 'flex';
+      setTimeout(function() {
+        successMessage.style.display = 'none';
+      }, 1000);
+    }
+    
+    // Simulate adding to the list
+    // Call showSuccessMessage() when item is successfully added
+    setTimeout(() => {
+      showSuccessMessage();
+    }, 1000);
+
 });
-// const form = document.querySelector('.new-item-form') as HTMLFormElement;
-// const itemList = document.querySelector('.item-list') as HTMLUListElement; // Select the <ul> element
-// const list = new ListTemplate(itemList); // Create an instance of ListTemplate
-// form.addEventListener('submit', (e: Event) => {
-//   e.preventDefault();
-//   // Extract form values
-//   const type = document.querySelector('#type') as HTMLSelectElement;
-//   const tofrom = document.querySelector('#tofrom') as HTMLInputElement;
-//   const details = document.querySelector('#details') as HTMLInputElement;
-//   const amount = document.querySelector('#amount') as HTMLInputElement;
-//   let values: [string, string, number];
-//   values = [tofrom.value, details.value, amount.valueAsNumber];
-//   let doc: HasFormatter;
-//   if (type.value === 'invoice') {
-//     doc = new Invoice(...values);
-//   } else {
-//     doc = new Payment(...values);
-//   }
-//   // Render the document and clear the form fields
-//   list.render(doc, type.value, 'end');
-//   form.reset(); // Clear the form fields after submission
-// });
+
