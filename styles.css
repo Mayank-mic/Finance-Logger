@@ -95,7 +95,7 @@ body{
     display: none;
     position: fixed;
     top: -50px; /* Initially hide the message above the viewport */
-    right: 50%; /* Center horizontally */
+    left: 50%; /* Center horizontally */
     transform: translateX(-50%); /* Center horizontally */
     background-color: #ffffff; /* Green background color */
     color: rgb(0, 0, 0); /* White text color */
@@ -120,7 +120,7 @@ body{
 }
 
 .success-message span{
-  margin-left: 10px;
+  margin-right: 10px;
 }
 
 /* Keyframes for the animation */
